@@ -4,26 +4,20 @@ from flask import Flask, request, jsonify, abort
 
 app = Flask(__name__)
 
-@app.route("/hello", methods=["GET"])
-def get_hello():    
+@app.route("/", methods=["GET"])
+def get_index():    
     response = app.response_class(
-        response='{"message": "Hello World"}',
+        response='{"message": "welcome to api-examples"}',
         status=200,
         mimetype='application/json'
     )
 
     return response
 
-@app.route("/", methods=["GET"])
-def get_index():    
-    # for each in os.environ.keys():
-    #     print (each, os.environ[each]), "<br>" #db
-
-    # for each in request.headers.keys():
-    #     print (each, request.headers[each]), "<br>" #db
-
+@app.route("/hello", methods=["GET"])
+def get_hello():    
     response = app.response_class(
-        response='{"message": "welcome to api-examples"}',
+        response='{"message": "Hello World"}',
         status=200,
         mimetype='application/json'
     )
@@ -45,3 +39,4 @@ def get_datetime():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
+    

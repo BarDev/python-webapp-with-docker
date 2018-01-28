@@ -6,18 +6,11 @@ User-Agent: vscode-restclient
 Accept-Encoding: gzip, deflate
 
 ###
-GET {{host}}/datetime HTTP/1.1
-User-Agent: vscode-restclient
-Accept-Encoding: gzip, deflate
-
-###
-GET {{host}}/version HTTP/1.1
-User-Agent: vscode-restclient
-Accept-Encoding: gzip, deflate
-
-###
 GET {{host}}/hello HTTP/1.1
 User-Agent: vscode-restclient
 Accept-Encoding: gzip, deflate
 
-
+###
+GET {{host}}/datetime HTTP/1.1
+User-Agent: vscode-restclient
+Accept-Encoding: gzip, deflate
