@@ -22,17 +22,3 @@ curl --request GET \
   --header 'accept-encoding: gzip, deflate' \
   --header 'user-agent: vscode-restclient'
 ````
-
-
----
-## Docker
-Build docker image
-```
-docker build -t hello-world .
-```
-
-Run docker image
-
-```
-docker run -it -p 5000:5000 hello-world
-```
